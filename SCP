@@ -1,0 +1,39 @@
+🔐 What is scp?
+scp stands for Secure Copy Protocol. It is a command-line tool that allows you to securely transfer files or directories between two systems over a network using SSH (Secure Shell). It encrypts both the file
+contents and authentication details, making it more secure than rcp or FTP.
+
+- scp [options] source destination
+   source: The file or directory to be copied (can be local or remote).
+   destination: Where to copy the file or directory (can also be local or remote).
+
+📂 Usage Examples
+1. Copy File from Local to Remote
+- scp myfile.txt username@remote_host:/home/username/ [command]
+* This copies myfile.txt from your local machine to the /home/username/ directory on the remote server.
+
+2. Copy File from Remote to Local
+- scp username@remote_host:/home/username/myfile.txt /local/directory/ [command]
+* This downloads the file from the remote system to your local machine.
+
+3. Copy Directory (Recursively)
+- scp -r myfolder username@remote_host:/home/username/
+* Use -r to copy folders and their contents.
+
+4. Specify SSH Port
+- scp -P 2222 myfile.txt username@remote_host:/home/username/
+* Use -P (capital P) to specify a custom SSH port (default is 22).
+
+5. Use SSH Key for Authentication
+- scp -i ~/.ssh/id_rsa myfile.txt username@remote_host:/home/username/
+*  Uses a private key for login instead of a password.
+
+6. Copy from One Remote Host to Another
+- scp user1@host1:/path/file.txt user2@host2:/path/
+* scp also supports transferring files between two remote servers, initiated from a third system.
+
+
+
+
+
+
+
