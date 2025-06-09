@@ -1,0 +1,71 @@
+Here is a detailed explanation of **port numbers**, their **ranges**, and **meanings**:
+
+---
+
+### 🔹 What is a Port Number?
+
+A **port number** is a 16-bit number used to identify a specific process or service on a device. It works along with an IP address to direct network traffic to the correct application.
+
+For example:
+
+```
+IP address:port → 192.168.1.10:80
+```
+
+---
+
+### 🔹 Port Number Ranges
+
+| Port Range    | Name                      | Description                                   |
+| ------------- | ------------------------- | --------------------------------------------- |
+| 0 – 1023      | **Well-known ports**      | Assigned to common protocols by IANA          |
+| 1024 – 49151  | **Registered ports**      | Assigned to user or vendor processes          |
+| 49152 – 65535 | **Dynamic/private ports** | Used for temporary communication, client-side |
+
+---
+
+### 🔹 Common Port Numbers and Their Meanings
+
+| **Port**  | **Protocol** | **Service/Use**         | **Explanation**                             |
+| --------- | ------------ | ----------------------- | ------------------------------------------- |
+| **20**    | TCP          | FTP (Data)              | File transfer (data connection)             |
+| **21**    | TCP          | FTP (Control)           | Commands for file transfers                 |
+| **22**    | TCP          | SSH                     | Secure remote login                         |
+| **23**    | TCP          | Telnet                  | Unsecure remote login                       |
+| **25**    | TCP          | SMTP                    | Sending emails                              |
+| **53**    | TCP/UDP      | DNS                     | Domain Name Resolution                      |
+| **67**    | UDP          | DHCP (Server to client) | IP address allocation                       |
+| **68**    | UDP          | DHCP (Client to server) | IP request by client                        |
+| **80**    | TCP          | HTTP                    | Unsecured web traffic                       |
+| **110**   | TCP          | POP3                    | Receiving emails                            |
+| **123**   | UDP          | NTP                     | Time synchronization                        |
+| **143**   | TCP          | IMAP                    | Retrieving emails (more advanced than POP3) |
+| **161**   | UDP          | SNMP                    | Network monitoring                          |
+| **194**   | TCP          | IRC                     | Internet Relay Chat                         |
+| **443**   | TCP          | HTTPS                   | Secure web traffic (SSL/TLS)                |
+| **465**   | TCP          | SMTPS                   | Secure SMTP (email)                         |
+| **993**   | TCP          | IMAPS                   | Secure IMAP                                 |
+| **995**   | TCP          | POP3S                   | Secure POP3                                 |
+| **3306**  | TCP          | MySQL                   | Database communication                      |
+| **3389**  | TCP          | RDP                     | Remote Desktop Protocol                     |
+| **5432**  | TCP          | PostgreSQL              | Database service                            |
+| **8080**  | TCP          | HTTP (alternative port) | Web servers/testing                         |
+| **27017** | TCP          | MongoDB                 | NoSQL database communication                |
+
+---
+
+### 🔹 How Port Numbers Work
+
+When your computer connects to a service (e.g., a website):
+
+* **Your system** uses a **random high port (dynamic)**.
+* **The server** listens on a **well-known port** (e.g., port 80 for HTTP).
+* This helps manage **multiple connections simultaneously**.
+
+---
+
+### 🔹 Why Port Numbers Matter
+
+* Ensures correct routing of data between client and server applications.
+* Essential in configuring **firewalls**, **NAT**, **security groups**, **port forwarding**, etc.
+* Important for **network troubleshooting** and **protocol identification**.
