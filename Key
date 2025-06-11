@@ -1,0 +1,27 @@
+### 🔐 **Public Key & Private Key (Asymmetric Encryption)**
+
+They are a pair of keys used in **asymmetric cryptography** — mainly for **secure communication, authentication, and encryption**.
+
+#### 🔑 Public Key:
+
+* Can be **shared with anyone**.
+* Used to **encrypt** data.
+* Cannot be used to decrypt the data it encrypts.
+* Example use: When someone wants to send you a secure message, they use your **public key** to encrypt it.
+
+#### 🔒 Private Key:
+
+* Must be **kept secret** by the owner.
+* Used to **decrypt** data encrypted with the matching public key.
+* Also used to **sign** data digitally, proving authenticity.
+
+---
+
+### 🔄 Summary Table:
+
+| Feature        | Public Key                 | Private Key               |
+| -------------- | -------------------------- | ------------------------- |
+| Visibility     | Shared openly              | Kept secret               |
+| Function       | Encrypts data              | Decrypts data             |
+| Authentication | Verifies digital signature | Creates digital signature |
+| Usage          | SSH, SSL/TLS, Blockchain   | SSH, SSL/TLS, Blockchain  |
