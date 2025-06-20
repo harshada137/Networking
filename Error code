@@ -1,0 +1,12 @@
+| Code | Meaning                              | Description                                          |
+| ---- | ------------------------------------ | ---------------------------------------------------- |
+| 0    | **Success**                          | Command ran successfully.                            |
+| 1    | **General error**                    | Catch-all for general errors.                        |
+| 2    | **Misuse of shell builtins**         | Invalid use of command-line shell syntax.            |
+| 126  | **Command invoked cannot execute**   | File found but not executable.                       |
+| 127  | **Command not found**                | Usually due to a typo or missing executable.         |
+| 128  | **Invalid exit argument**            | Exit code out of range.                              |
+| 130  | **Script terminated by Ctrl+C**      | Exit due to SIGINT (signal 2).                       |
+| 137  | **Killed (Out of memory / SIGKILL)** | Process was forcefully terminated (e.g., `kill -9`). |
+| 139  | **Segmentation fault**               | Invalid memory access (SIGSEGV).                     |
+| 255  | **Exit status out of range**         | Used to indicate fatal errors.                       |
