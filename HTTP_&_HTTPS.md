@@ -1,7 +1,3 @@
-Sure, here's a detailed explanation of **HTTP** and **HTTPS**:
-
----
-
 ## 🔸 What is HTTP?
 
 **HTTP** stands for **HyperText Transfer Protocol**.
